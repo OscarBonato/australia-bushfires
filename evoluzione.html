@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evoluzione degli Incendi - Australia 2019–2020</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: #ff7043;
+      font-size: 1.5rem;
+    }
+    nav .menu {
+      background: none;
+      border: 1px solid #ff7043;
+      padding: 0.5rem 1rem;
+      color: #ff7043;
+      cursor: pointer;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #1f1f1f;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      border-radius: 8px;
+      top: 3.5rem;
+      right: 2rem;
+      z-index: 1;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .dropdown a {
+      color: #f5f5f5;
+      padding: 0.75rem 1rem;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown a:hover {
+      background-color: #333;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    h2 {
+      color: #ff7043;
+      margin-bottom: 1rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+    .content-section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Australia Bushfires</h1>
+    <nav>
+      <button class="menu" onclick="toggleDropdown()">Menu ▾</button>
+      <div id="dropdown" class="dropdown">
+        <a href="index.html">Home</a>
+        <a href="info.html">Informazioni</a>
+        <a href="rainfall.html">Deficit Pioggia</a>
+        <a href="evoluzione.html">Evoluzione Incendi</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="content-section">
+      <h2>Evoluzione degli Incendi in Australia (2019–2020)</h2>
+      <p>
+        La stagione degli incendi del 2019–2020, conosciuta come "Black Summer", ha rappresentato una delle più gravi catastrofi ambientali nella storia dell'Australia. Gli incendi hanno devastato milioni di ettari di terra, distruggendo habitat naturali e mettendo a rischio la fauna locale.
+      </p>
+      <p>
+        Le immagini satellitari mostrano l'evoluzione degli incendi nel tempo, evidenziando le aree più colpite e l'intensità del fenomeno.
+      </p>
+      <img src="images/nasa-worldview-2019 SEP 07-to-2019 SEP 30.gif" alt="Evoluzione degli incendi in Australia">
+    </section>
+    <section class="content-section">
+      <h2>Impatto Ambientale e Sociale</h2>
+      <p>
+        Gli incendi hanno avuto un impatto devastante sull'ambiente e sulle comunità locali. Oltre 12 milioni di ettari di foreste e bush sono stati distrutti, e si stima che oltre 3 miliardi di animali siano stati uccisi o dispersi.
+      </p>
+      <p>
+        Le comunità hanno affrontato sfide significative, tra cui evacuazioni di massa, danni alle abitazioni e un deterioramento della qualità dell'aria a causa del fumo.
+      </p>
+    </section>
+  </main>
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

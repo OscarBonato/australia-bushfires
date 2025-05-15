@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Australia Bushfires - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Stile aggiuntivo per la home */
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    section.home-section {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    section.home-section h2 {
+      font-size: 2.2rem;
+      color: #ff7043;
+      margin-bottom: 1rem;
+    }
+    section.home-section p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+  </style>
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+    document.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('dropdown');
+      const menu = document.querySelector('.menu');
+      if (!menu.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Australia Bushfires</h1>
+    <nav>
+      <button class="menu" onclick="toggleDropdown()">Menu ▾</button>
+      <div id="dropdown" class="dropdown">
+        <a href="index.html">Home</a>
+        <a href="info.html">Informazioni</a>
+        <a href="rainfall.html">Deficit Pioggia</a>
+        <a href="evoluzione.html">Evoluzione Incendi</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="home-section">
+      <h2>Benvenuti</h2>
+      <p>
+        Questo sito esplora uno degli eventi ambientali più devastanti nella storia dell'Australia: i bushfires del 2019-2020, noti come "Black Summer". Scopri come si sono sviluppati, le loro cause e le conseguenze sull'ambiente e sulla società.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
