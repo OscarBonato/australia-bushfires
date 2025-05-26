@@ -2,57 +2,56 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Informazioni - Australia Bushfires</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Informazioni - Bushfires in Australia</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      color: #ddd;
-    }
-    h2 {
-      color: #ff7043;
-      margin-bottom: 1rem;
-    }
-    p {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-  </style>
-  <script>
-    function toggleDropdown() {
-      const dropdown = document.getElementById('dropdown');
-      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-    }
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>Australia Bushfires</h1>
-    <nav>
-      <button class="menu" onclick="toggleDropdown()">Menu ▾</button>
-      <div id="dropdown" class="dropdown">
-        <a href="index.html">Home</a>
-        <a href="info.html">Informazioni</a>
-        <a href="rainfall.html">Deficit Pioggia</a>
-        <a href="evoluzione.html">Evoluzione Incendi</a>
-      </div>
-    </nav>
+    <h1>Informazioni sui Bushfires</h1>
+    <p>Cause, impatti e cambiamento climatico</p>
   </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Informazioni</a>
+    <a href="immagini.html">Immagini</a>
+  </nav>
+
   <main>
-    <h2>Informazioni sull'evento</h2>
+    <h2>Cause principali</h2>
+    <ul>
+      <li><strong>Clima secco e caldo:</strong> temperature elevate e bassa umidità aumentano il rischio di incendi.</li>
+      <li><strong>Vegetazione infiammabile:</strong> eucalipti e arbusti rilasciano oli altamente combustibili.</li>
+      <li><strong>Fattori umani:</strong> mozziconi di sigaretta, incendi dolosi, fuochi mal gestiti.</li>
+      <li><strong>Fulmini:</strong> nelle regioni remote sono una causa naturale molto comune.</li>
+    </ul>
+
+    <h2>Effetti devastanti</h2>
+    <ul>
+      <li><strong>Ambiente:</strong> interi ecosistemi distrutti, specie animali a rischio, inquinamento atmosferico diffuso.</li>
+      <li><strong>Società:</strong> evacuazioni, danni economici, trauma psicologico, perdita di case e mezzi di sostentamento.</li>
+      <li><strong>Salute:</strong> l'aria satura di fumo ha causato gravi problemi respiratori e decessi indiretti.</li>
+    </ul>
+
+    <h2>Legame con il cambiamento climatico</h2>
     <p>
-      I bushfires australiani del 2019-2020, noti anche come "Black Summer", sono stati tra gli incendi più devastanti mai registrati in Australia. Hanno causato la morte di almeno 33 persone, distrutto migliaia di abitazioni e bruciato oltre 18 milioni di ettari di terreno.
+      I bushfires sono diventati più intensi a causa del riscaldamento globale. Le stagioni secche si allungano e le piogge sono più irregolari. Questo porta ad accumulo di materiale secco e a una maggiore probabilità che un incendio diventi incontrollabile.
     </p>
-    <p>
-      Le cause principali sono state la siccità prolungata, le alte temperature e i cambiamenti climatici. Molti animali hanno perso la vita o l'habitat, e l'impatto ambientale è stato enorme. Il fumo ha raggiunto persino il Sud America e ha reso l'aria irrespirabile in molte aree del paese.
-    </p>
+
+    <h2>Risposta del governo</h2>
+    <ul>
+      <li>Potenziamento delle squadre di vigili del fuoco e delle unità di risposta rapida.</li>
+      <li>Campagne di sensibilizzazione pubblica sul rischio incendi.</li>
+      <li>Investimenti in tecnologie di rilevamento precoce tramite satelliti e droni.</li>
+      <li>Piani di evacuazione e gestione delle emergenze migliorati.</li>
+    </ul>
   </main>
+
+  <footer>
+    &copy; 2025 - Progetto scolastico sui Bushfires | Realizzato per uso educativo
+  </footer>
 </body>
 </html>
