@@ -2,69 +2,46 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Australia Bushfires - Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Home - Bushfires in Australia</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Stile aggiuntivo per la home */
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #1e1e1e;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-    section.home-section {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    section.home-section h2 {
-      font-size: 2.2rem;
-      color: #ff7043;
-      margin-bottom: 1rem;
-    }
-    section.home-section p {
-      font-size: 1.3rem;
-      line-height: 1.6;
-      color: #ddd;
-    }
-  </style>
-  <script>
-    function toggleDropdown() {
-      const dropdown = document.getElementById('dropdown');
-      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-    }
-    document.addEventListener('click', function(event) {
-      const dropdown = document.getElementById('dropdown');
-      const menu = document.querySelector('.menu');
-      if (!menu.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.style.display = 'none';
-      }
-    });
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>Australia Bushfires</h1>
-    <nav>
-      <button class="menu" onclick="toggleDropdown()">Menu ▾</button>
-      <div id="dropdown" class="dropdown">
-        <a href="index.html">Home</a>
-        <a href="info.html">Informazioni</a>
-        <a href="rainfall.html">Deficit Pioggia</a>
-        <a href="evoluzione.html">Evoluzione Incendi</a>
-      </div>
-    </nav>
+    <h1>Bushfires in Australia</h1>
+    <p>Un fenomeno estremo che sta cambiando il volto dell'Australia</p>
   </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Informazioni</a>
+    <a href="immagini.html">Immagini</a>
+  </nav>
+
   <main>
-    <section class="home-section">
-      <h2>Benvenuti</h2>
-      <p>
-        Questo sito esplora uno degli eventi ambientali più devastanti nella storia dell'Australia: i bushfires del 2019-2020, noti come "Black Summer". Scopri come si sono sviluppati, le loro cause e le conseguenze sull'ambiente e sulla società.
-      </p>
-    </section>
+    <h2>Cos'è un Bushfire?</h2>
+    <p>
+      I <strong>bushfires</strong> sono incendi incontrollati che colpiscono aree boschive, praterie o territori aridi dell'Australia.
+      Si sviluppano soprattutto durante l'estate australe, quando il clima caldo e secco, combinato con forti venti, favorisce l'espansione rapida delle fiamme.
+    </p>
+
+    <h2>Perché colpiscono l'Australia?</h2>
+    <p>
+      L'Australia è particolarmente vulnerabile a questi incendi per via della sua vegetazione altamente infiammabile, delle lunghe stagioni secche e delle frequenti ondate di calore.
+      Negli ultimi anni, il cambiamento climatico ha intensificato questi eventi rendendoli più frequenti, più lunghi e più devastanti.
+    </p>
+
+    <h2>Un disastro naturale sempre più frequente</h2>
+    <p>
+      L'estate 2019-2020 è passata alla storia come la stagione degli incendi più catastrofica mai registrata nel paese: oltre 18 milioni di ettari bruciati,
+      miliardi di animali uccisi o sfollati, migliaia di abitazioni distrutte e un impatto enorme sull'aria e sulla salute pubblica.
+    </p>
   </main>
+
+  <footer>
+    &copy; 2025 - Progetto scolastico sui Bushfires | Realizzato per uso educativo
+  </footer>
 </body>
 </html>
